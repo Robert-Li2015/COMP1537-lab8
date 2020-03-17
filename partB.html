@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <script>
+    
+
+        let myObj = new Myrecipe ("Chicken Cacciatore", 2, ["cinnamon", "lettuce", "onion"] );
+        function Myrecipe(Title, Servers, Ingredients){
+            this.Title = Title;
+            this.Servers = Servers;
+            this.Ingredients = Ingredients;
+            
+          this.print = function(){
+    
+          document.write("Title:  " +this.Title + "</br>")  ;
+          document.write("Servers:  " +this.Servers+ "</br>")  ;
+          for ( let i = 0; i<Ingredients.length; i++){
+          document.write("Ingredients:  " +this.Ingredients[i]+"</br>")  ;
+
+          }
+         }
+       }
+
+
+       myObj.print();
+       
+
+    </script>
+</body>
+</html>
